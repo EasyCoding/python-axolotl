@@ -14,7 +14,7 @@ Summary: %{appsum}
 
 License: GPLv3+
 URL: https://github.com/tgalal/%{name}
-Source0: %{url}/archive/%{version}.tar.gz#/%{appname}-%{version}.tar.gz
+Source0: %{url}/archive/%{commit0}.tar.gz#/%{name}-%{shortcommit0}.tar.gz
 BuildArch: noarch
 
 BuildRequires: python2-devel
