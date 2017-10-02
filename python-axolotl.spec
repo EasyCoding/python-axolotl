@@ -18,8 +18,8 @@ BuildRequires: python3-devel
 
 BuildRequires: python2dist(pycrypto)
 BuildRequires: python3dist(pycrypto)
-BuildRequires: python2dist(axolotl-curve25519)
-BuildRequires: python3dist(axolotl-curve25519)
+BuildRequires: python2dist(python-axolotl-curve25519)
+BuildRequires: python3dist(python-axolotl-curve25519)
 BuildRequires: python2dist(protobuf)
 BuildRequires: python3dist(protobuf)
 
@@ -50,10 +50,6 @@ Summary: %{appsum}
 %install
 %py2_install
 %py3_install
-
-%check
-%{__python2} setup.py test
-%{__python3} setup.py test
 
 %files -n python2-%{appname}
 %license LICENSE
