@@ -15,14 +15,10 @@ Summary: %{appsum}
 License: GPLv3+
 URL: https://github.com/tgalal/%{name}
 Source0: %{url}/archive/%{commit0}.tar.gz#/%{name}-%{shortcommit0}.tar.gz
-BuildArch: noarch
 
 BuildRequires: python2-devel
 BuildRequires: python3-devel
 BuildRequires: gcc
-
-BuildRequires: python2dist(crypto)
-BuildRequires: python3dist(crypto)
 
 %description
 %{appdesc}.
@@ -59,12 +55,12 @@ Summary: %{appsum}
 %files -n python2-%{appname}
 %license LICENSE
 %doc README.md
-%{python2_sitelib}/*
+%{python2_sitearch}/*
 
 %files -n python3-%{appname}
 %license LICENSE
 %doc README.md
-%{python3_sitelib}/*
+%{python3_sitearch}/*
 
 %changelog
 * Mon Oct 02 2017 Vitaly Zaitsev <vitaly@easycoding.org> - 0-1.20150217gite4a9c4d
