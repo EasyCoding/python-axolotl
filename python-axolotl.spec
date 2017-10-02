@@ -9,7 +9,7 @@ Release: 1%{?dist}
 Summary: %{appsum}
 
 License: GPLv3+
-URL: https://github.com/tgalal/%{appname}
+URL: https://github.com/tgalal/%{name}
 Source0: %{url}/archive/%{version}.tar.gz#/%{appname}-%{version}.tar.gz
 BuildArch: noarch
 
