@@ -16,8 +16,8 @@ BuildArch: noarch
 BuildRequires: python2-devel
 BuildRequires: python3-devel
 
-BuildRequires: python2dist(crypto)
-BuildRequires: python3dist(crypto)
+BuildRequires: python2dist(pycrypto)
+BuildRequires: python3dist(pycrypto)
 BuildRequires: python2dist(axolotl-curve25519)
 BuildRequires: python3dist(axolotl-curve25519)
 BuildRequires: python2dist(protobuf)
