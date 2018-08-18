@@ -4,7 +4,7 @@
 %global appdesc This is a Python port of libsignal-protocol-java originally written by Moxie Marlinspike
 
 Name: python-%{appname}
-Version: 0.1.39
+Version: 0.1.42
 Release: 1%{?dist}
 Summary: %{appsum}
 
@@ -62,5 +62,8 @@ Summary: %{appsum}
 %{python3_sitelib}/*
 
 %changelog
+* Sat Aug 18 2018 Vitaly Zaitsev <vitaly@easycoding.org> - 0.1.42-1
+- Updated to version 0.1.42.
+
 * Mon Oct 02 2017 Vitaly Zaitsev <vitaly@easycoding.org> - 0.1.39-1
 - Initial SPEC release.
