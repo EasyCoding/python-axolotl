@@ -1,14 +1,14 @@
 %global appname axolotl-curve25519
 
-%global commit0 e4a9c4de0eae27223200579c58d1f8f6d20637e2
+%global commit0 293f9cd5a42459f7e68748764de8387f37147db2
 %global shortcommit0 %(c=%{commit0}; echo ${c:0:7})
-%global date 20150217
+%global date 20180414
 
 %global appsum Python wrapper for curve25519 library with ed25519 signatures
 %global appdesc This is Python wrapper for curve25519 library with ed25519 signatures.
 
 Name: python-%{appname}
-Version: 0
+Version: 0.4.1
 Release: 1.%{date}git%{shortcommit0}%{?dist}
 Summary: %{appsum}
 
@@ -63,5 +63,8 @@ Summary: %{appsum}
 %{python3_sitearch}/*
 
 %changelog
+* Sat Aug 18 2018 Vitaly Zaitsev <vitaly@easycoding.org> - 0.4.1-1.20180414git293f9cd
+- Updated to version 0.4.1 (snapshot).
+
 * Mon Oct 02 2017 Vitaly Zaitsev <vitaly@easycoding.org> - 0-1.20150217gite4a9c4d
 - Initial SPEC release.
